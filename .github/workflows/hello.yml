@@ -13,7 +13,7 @@ jobs:
     #that ephernal containr will have steps to execute, hence name those steps and run 
     steps:
       - name: say hello to everyone 
-       run: echo "Hello Dosto"
+      run: echo "Hello Dosto"
     
 # Steps
 # should be inside jobs
