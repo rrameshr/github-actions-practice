@@ -1,0 +1,22 @@
+# workflows 
+
+name: Hello 
+#on tells when the workflow should run 
+on:
+  workflow_dispatch:
+# there can be one or more job so we name it jobs
+jobs:
+# 1st job (give indentation)
+  say-hello:
+  # create an ephernal container with ubuntu running
+    runs-on: ubuntu-latest
+    #that ephernal containr will have steps to execute, hence name those steps and run 
+    steps:
+      - name: say hello to everyone 
+       run: echo "Hello Dosto"
+    
+# Steps
+# should be inside jobs
+
+# Actions
+# should be inside Steps
